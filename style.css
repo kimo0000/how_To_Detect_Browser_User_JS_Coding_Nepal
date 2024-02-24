@@ -1,0 +1,48 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(#000 50%, blueviolet 100%);
+}
+.wrapper {
+  width: 50%;
+  max-width: 350px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+@media (max-width: 468px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  opacity: 0.5;
+}
